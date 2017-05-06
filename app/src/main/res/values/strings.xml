@@ -5,4 +5,9 @@
     <string name="numero2">Numero 2</string>
     <string name="calcular">CALCULAR</string>
     <string name="borrar">BORRAR</string>
+    <string name="restar">Restar</string>
+    <string name="multiplicar">MULTIPLICAR</string>
+    <string name="dividir">DIVIDIR</string>
+    <string name="error1">Por favor digite el numero 1</string>
+    <string name="error2">Por favor digite el numero 2</string>
 </resources>
