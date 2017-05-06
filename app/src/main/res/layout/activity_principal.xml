@@ -13,7 +13,10 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
 
         <TextView
             android:text="@string/titulo"
@@ -27,7 +30,7 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="number|numberSigned"
             android:ems="10"
             android:id="@+id/txtNumeroUno"
             android:hint="@string/numero1" />
@@ -35,72 +38,37 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:inputType="number"
+            android:inputType="number|numberSigned"
             android:ems="10"
             android:id="@+id/txtNumeroDos"
             android:hint="@string/numero2" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/cmbOperaciones" />
 
         <LinearLayout
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <LinearLayout
-                android:orientation="vertical"
+            <Button
+                android:text="@string/calcular"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
+                android:id="@+id/cmdCalcular"
+                android:onClick="calcular"
+                android:layout_weight="1" />
 
-                <Button
-                    android:text="@string/calcular"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:id="@+id/cmdCalcular"
-                    android:onClick="calcular" />
-
-                <Button
-                    android:text="@string/restar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/cmdRestar"
-                    android:layout_weight="1"
-                    android:onClick="restar" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:orientation="vertical"
+            <Button
+                android:text="@string/borrar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1">
-
-                <Button
-                    android:text="@string/multiplicar"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/cmdMultiplicar"
-                    android:layout_weight="1"
-                    android:onClick="multiplicar" />
-
-                <Button
-                    android:text="@string/dividir"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/cmdDividir"
-                    android:onClick="dividir"
-                    android:layout_weight="1" />
-
-            </LinearLayout>
-
+                android:id="@+id/cmdBorrar"
+                android:onClick="borrar"
+                android:layout_weight="1" />
         </LinearLayout>
-
-        <Button
-            android:text="@string/borrar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/cmdBorrar"
-            android:onClick="borrar" />
 
         <TextView
             android:layout_width="match_parent"

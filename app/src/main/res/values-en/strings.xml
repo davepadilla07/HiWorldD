@@ -11,4 +11,6 @@
     <string name="dividir">DIVIDE</string>
     <string name="error1">Please enter the first number</string>
     <string name="error2">Please enter the second number</string>
+    <string name="error2_division">Denominator can´t be Cero</string>
+    <string name="suma">ADD</string>
 </resources>

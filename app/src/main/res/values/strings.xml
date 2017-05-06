@@ -3,11 +3,19 @@
     <string name="titulo">CALCULADORA</string>
     <string name="numero1">Numero 1</string>
     <string name="numero2">Numero 2</string>
-    <string name="calcular">CALCULAR</string>
+    <string name="calcular">calcular</string>
+    <string name="suma">SUMA</string>
     <string name="borrar">BORRAR</string>
-    <string name="restar">Restar</string>
+    <string name="restar">RESTAR</string>
     <string name="multiplicar">MULTIPLICAR</string>
     <string name="dividir">DIVIDIR</string>
     <string name="error1">Por favor digite el numero 1</string>
     <string name="error2">Por favor digite el numero 2</string>
+    <string name="error2_division">El denominador no puede ser 0</string>
+    <string-array name="opciones">
+        <item>@string/suma</item>
+        <item>@string/restar</item>
+        <item>@string/multiplicar</item>
+        <item>@string/dividir</item>
+    </string-array>
 </resources>
